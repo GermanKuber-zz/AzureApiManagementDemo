@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiDemo</name>
+    </assembly>
+    <members>
+        <member name="T:TaskAPI.Models.CreateTaskListRequest">
+            <summary>
+            Request to create a task list
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.CreateTaskListRequest.UserId">
+            <summary>
+            User Id for whom the task list is being created
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.CreateTaskListRequest.TaskListTitle">
+            <summary>
+            Title / Description of the task list
+            </summary>
+        </member>
+        <member name="T:TaskAPI.Models.CreateTaskRequest">
+            <summary>
+            Request to create a task on a task list
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.CreateTaskRequest.TaskListId">
+            <summary>
+            Task List Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.CreateTaskRequest.TaskTitle">
+            <summary>
+            Task List Description
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.Id">
+            <summary>
+            Identity
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.TaskListId">
+            <summary>
+            Task List Unique Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.TaskId">
+            <summary>
+            Task Unique Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.DueOnUtc">
+            <summary>
+            Task due date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.CompletedOnUtc">
+            <summary>
+            Task completed on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.IsCompleted">
+            <summary>
+            True if task is completed 
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.CreatedOnUtc">
+            <summary>
+            Task created on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.UpdatedOnUtc">
+            <summary>
+            Task updated on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.IsDeleted">
+            <summary>
+            True if task is deleted
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.Task.IsActive">
+            <summary>
+            True if task is active
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.Id">
+            <summary>
+            Identity
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.UserId">
+            <summary>
+            User unique Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.TaskListId">
+            <summary>
+            Task list unique Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.Title">
+            <summary>
+            Task list title
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.CreatedOnUtc">
+            <summary>
+            Task list created on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.UpdatedOnUtc">
+            <summary>
+            Task list updated on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.IsDeleted">
+            <summary>
+            True list if task is deleted
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.TaskList.IsActive">
+            <summary>
+            True list if task is active
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.Id">
+            <summary>
+            Identity
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.UserId">
+            <summary>
+            User unique Id
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.EmailAddress">
+            <summary>
+            User email address
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.CreatedOnUtc">
+            <summary>
+            User created on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.UpdatedOnUtc">
+            <summary>
+            User updated on date
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.IsDeleted">
+            <summary>
+            True if user is deleted
+            </summary>
+        </member>
+        <member name="P:TaskAPI.Models.User.IsActive">
+            <summary>
+            True if user is active
+            </summary>
+        </member>
+    </members>
+</doc>

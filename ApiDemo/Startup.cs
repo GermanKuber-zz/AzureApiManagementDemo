@@ -13,6 +13,7 @@ using TaskAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 using Microsoft.Extensions.PlatformAbstractions;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace ApiDemo
 {
@@ -48,9 +49,10 @@ namespace ApiDemo
             services.ConfigureSwaggerGen(options =>
             {
                
-                var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, pathToDoc);
+                var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,"App_data", pathToDoc);
                 options.IncludeXmlComments(filePath);
                 options.DescribeAllEnumsAsStrings();
+                options.IncludeXmlComments(filePath);
             });
         }
 
