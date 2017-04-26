@@ -24,3 +24,6 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 ```
+
+# Publish Url
+http://apidemovalue.azurewebsites.net/swagger/
