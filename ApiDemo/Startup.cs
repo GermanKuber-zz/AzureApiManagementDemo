@@ -8,7 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
-
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using TaskAPI.Models;
+using Microsoft.EntityFrameworkCore;
 namespace ApiDemo
 {
     public class Startup
@@ -28,8 +30,11 @@ namespace ApiDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
+            services
+               .AddEntityFramework()
+               .AddDbContext<TaskContext>(options => options.UseInMemoryDatabase());
+            
+           services.AddMvc();
 
             // Register the Swagger generator, defining one or more Swagger documents
             services.AddSwaggerGen(c =>
