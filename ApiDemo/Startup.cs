@@ -11,6 +11,9 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using TaskAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+using Microsoft.Extensions.PlatformAbstractions;
+
 namespace ApiDemo
 {
     public class Startup
@@ -36,10 +39,18 @@ namespace ApiDemo
             
            services.AddMvc();
 
-            // Register the Swagger generator, defining one or more Swagger documents
+            var pathToDoc = Configuration["Swagger:FileName"];
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
+
+            services.ConfigureSwaggerGen(options =>
+            {
+               
+                var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, pathToDoc);
+                options.IncludeXmlComments(filePath);
+                options.DescribeAllEnumsAsStrings();
             });
         }
 
