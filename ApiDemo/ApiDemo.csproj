@@ -13,6 +13,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\ApiDemo20170426095544 - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\ApiDemoValue - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
